@@ -3,10 +3,10 @@ from collections import namedtuple
 import torch
 from torchvision import models
 from torchvision.models.vgg import model_urls
-from torchutil import *
 import os
 
-weights_folder = os.path.join(os.path.dirname(__file__) + '/../pretrain')
+from torchutil import *
+
 
 
 class vgg16_bn(torch.nn.Module):
@@ -17,7 +17,7 @@ class vgg16_bn(torch.nn.Module):
         vgg_pretrained_features = models.vgg16_bn(pretrained=False)
         if pretrained:
             vgg_pretrained_features.load_state_dict(
-                copyStateDict(torch.load(os.path.join(weights_folder, '/data/CRAFT-pytorch/vgg16_bn-6c64b313.pth'))))
+                copyStateDict(torch.load('/content/craft/vgg16_bn-6c64b313.pth')))
         vgg_pretrained_features = vgg_pretrained_features.features
         self.slice1 = torch.nn.Sequential()
         self.slice2 = torch.nn.Sequential()
