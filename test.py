@@ -108,8 +108,6 @@ def test_net(net, image, text_threshold, link_threshold, low_text, cuda, poly):
 
     return boxes, polys, ret_score_text
 
-
-
 def test(modelpara):
     # load net
     net = CRAFT()     # initialize
