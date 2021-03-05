@@ -17,7 +17,7 @@ class vgg16_bn(torch.nn.Module):
         vgg_pretrained_features = models.vgg16_bn(pretrained=False)
         if pretrained:
             vgg_pretrained_features.load_state_dict(
-                copyStateDict(torch.load('/content/craft/vgg16_bn-6c64b313.pth')))
+                copyStateDict(torch.load('/content/craft-pytorch/pretrain/vgg16_bn.pth')))
         vgg_pretrained_features = vgg_pretrained_features.features
         self.slice1 = torch.nn.Sequential()
         self.slice2 = torch.nn.Sequential()
