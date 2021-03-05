@@ -1,3 +1,9 @@
+[x] add notebook file
+[x] change file basenet/vgg16_bn
+[x] change file test.py, evaluation.py
+[x] add test_util.py
+
+
 # CRAFT-Reimplementation
 # Note：If you have any problems, please comment. Or you can join us weChat group. The QR code will update in issues #49 .
 
