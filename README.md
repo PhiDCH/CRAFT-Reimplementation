@@ -1,7 +1,7 @@
-[x] add notebook file. \\
-[x] change file basenet/vgg16_bn.\\
-[x] change file test.py, evaluation.py.\\
-[x] add test_util.py.\\
+- [x] add notebook file. 
+- [x] change file basenet/vgg16_bn.
+- [x] change file test.py, evaluation.py.
+- [x] add test_util.py.
 
 
 # CRAFT-Reimplementation
