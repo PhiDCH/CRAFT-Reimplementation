@@ -3,6 +3,8 @@
 - [x] change file test.py, evaluation.py.
 - [x] add test_util.py.
 
+# Result
+pre-trained model of clovaai https://github.com/clovaai/CRAFT-pytorch only got 81.15% f1-score on ICDAR2015 dataset while the score provided by https://github.com/backtime92/CRAFT-Reimplementation is 27.6% f1-score -> bad pre-trained model.
 
 # CRAFT-Reimplementation
 # Note：If you have any problems, please comment. Or you can join us weChat group. The QR code will update in issues #49 .
